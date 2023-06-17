@@ -10,17 +10,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-j_89af+30&&4qm*8z9_(^zz8p4-ho8z_m6ylm0s$h!-p@on1_^'
 
-web_server_url = os.getenv('web_server_url')
-web_server_name = os.getenv('web_server_name')
-local_server_url = os.getenv('local_server_url', default='127.0.0.1')
-local_server_name = os.getenv('local_server_name', default='localhost')
-# SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = False
 
-# DEBUG = True
 
-# ALOWED_HOSTS = []
-ALLOWED_HOSTS = [web_server_url, local_server_url, local_server_name, web_server_name]
+ALOWED_HOSTS = ['158.160.31.32','127.0.0.1','localhost', 'yakittygram.hopto.org']
 
 # Application definition
 
