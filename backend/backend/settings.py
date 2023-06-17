@@ -1,5 +1,5 @@
-import os
 from dotenv import load_dotenv
+import os
 from pathlib import Path
 
 load_dotenv()
@@ -7,7 +7,7 @@ load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-#SECRET_KEY = 'django-insecure-j_89af+30&&4qm*8z9_(^zz8p4-ho8z_m6ylm0s$h!-p@on1_^'
+# SECRET_KEY = 'django-insecure-j_89af+30&&4qm*8z9_(^zz8p4-ho8z_m6ylm0s$h!-p@on1_^'
 
 web_server_url = os.getenv('web_server_url')
 web_server_name = os.getenv('web_server_name')
@@ -16,9 +16,9 @@ local_server_name = os.getenv('local_server_name', default='localhost')
 SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = False
 
-#DEBUG = True
+# DEBUG = True
 
-#ALOWED_HOSTS = []
+# ALOWED_HOSTS = []
 ALLOWED_HOSTS = [web_server_url, local_server_url, local_server_name, web_server_name]
 
 # Application definition
